@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.macnotch.app</string>
+
+    <key>CFBundleName</key>
+    <string>MacNotch</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>MacNotch</string>
+
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+
+    <key>CFBundleIconName</key>
+    <string>AppIcon</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <!-- Dock 아이콘 숨기기 (메뉴바 전용 앱) -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <key>NSSupportsAutomaticGraphicsSwitching</key>
+    <true/>
+
+    <!-- 달력 접근 권한 -->
+    <key>NSCalendarsUsageDescription</key>
+    <string>노치에 다가오는 일정을 표시합니다.</string>
+
+    <!-- Apple Music / AppleScript -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>현재 재생 중인 음악 정보와 앨범 아트를 가져옵니다.</string>
+
+    <!-- 앱 카테고리 -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+</dict>
+</plist>

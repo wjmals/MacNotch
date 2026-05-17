@@ -1,0 +1,79 @@
+{
+  "": {
+    "dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotch.d",
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotch.o",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/primary.swiftdeps"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/CalendarService.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarService.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarService~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarService.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarService.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/CalendarView.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarView.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarView.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarView.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/FilesView.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/FilesView.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/FilesView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/FilesView.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/FilesView.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/MacNotchApp.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotchApp.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotchApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotchApp.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotchApp.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/MusicView.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MusicView.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MusicView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MusicView.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MusicView.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchViewModel.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViewModel.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViewModel.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViewModel.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchViews.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViews.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViews~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViews.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViews.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchWindowController.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchWindowController.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchWindowController~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchWindowController.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchWindowController.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NowPlayingService.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NowPlayingService.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NowPlayingService~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NowPlayingService.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NowPlayingService.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/SystemMetrics.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemMetrics.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemMetrics~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemMetrics.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemMetrics.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/SystemView.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemView.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemView.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemView.dia"
+  },
+  "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/DerivedSources/resource_bundle_accessor.swift": {
+    "object": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/resource_bundle_accessor.dia"
+  }
+}

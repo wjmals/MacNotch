@@ -1,0 +1,77 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "MacNotch-arm64-apple-macosx-release.exe": ["<MacNotch-arm64-apple-macosx-release.exe>"]
+  "MacNotch-arm64-apple-macosx-release.module": ["<MacNotch-arm64-apple-macosx-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MacNotch-arm64-apple-macosx-release.exe>","<MacNotch-arm64-apple-macosx-release.module>"]
+  "test": ["<MacNotch-arm64-apple-macosx-release.exe>","<MacNotch-arm64-apple-macosx-release.module>"]
+default: "main"
+nodes:
+  "/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/CalendarService.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/CalendarView.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/FilesView.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/MacNotchApp.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/MusicView.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchViewModel.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchViews.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchWindowController.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NowPlayingService.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/SystemMetrics.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/SystemView.swift","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/DerivedSources/resource_bundle_accessor.swift"]
+    outputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/sources"]
+    description: "Write auxiliary file /Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/sources"
+
+  "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarService.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/FilesView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotchApp.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MusicView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViewModel.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViews.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchWindowController.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NowPlayingService.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemMetrics.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/resource_bundle_accessor.swift.o"]
+    outputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.product/Objects.LinkFileList"
+
+  "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch_MacNotch.bundle/Assets.xcassets":
+    tool: copy-tool
+    inputs: ["/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/Assets.xcassets/"]
+    outputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch_MacNotch.bundle/Assets.xcassets/"]
+    description: "Copying /Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/Assets.xcassets"
+
+  "/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<MacNotch-arm64-apple-macosx-release.exe>":
+    tool: phony
+    inputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch"]
+    outputs: ["<MacNotch-arm64-apple-macosx-release.exe>"]
+
+  "<MacNotch-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarService.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/FilesView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotchApp.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MusicView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViewModel.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViews.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchWindowController.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NowPlayingService.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemMetrics.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/resource_bundle_accessor.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/Modules/MacNotch.swiftmodule"]
+    outputs: ["<MacNotch-arm64-apple-macosx-release.module>"]
+
+  "C.MacNotch-arm64-apple-macosx-release.exe":
+    tool: shell
+    inputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarService.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/FilesView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotchApp.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MusicView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViewModel.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViews.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchWindowController.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NowPlayingService.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemMetrics.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/resource_bundle_accessor.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.product/Objects.LinkFileList"]
+    outputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch"]
+    description: "Linking ./.build/arm64-apple-macosx/release/MacNotch"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release","-o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch","-module-name","MacNotch","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_MacNotch_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.MacNotch-arm64-apple-macosx-release.module":
+    tool: shell
+    inputs: ["/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/CalendarService.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/CalendarView.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/FilesView.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/MacNotchApp.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/MusicView.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchViewModel.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchViews.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NotchWindowController.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/NowPlayingService.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/SystemMetrics.swift","/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/SystemView.swift","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/DerivedSources/resource_bundle_accessor.swift","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","<MacNotch-arm64-apple-macosx-release.module-resources>","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/sources"]
+    outputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarService.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/CalendarView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/FilesView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MacNotchApp.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/MusicView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViewModel.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchViews.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NotchWindowController.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/NowPlayingService.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemMetrics.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/SystemView.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/resource_bundle_accessor.swift.o","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/Modules/MacNotch.swiftmodule"]
+    description: "Compiling Swift Module 'MacNotch' (12 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","MacNotch","-emit-dependencies","-emit-module","-emit-module-path","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/Modules/MacNotch.swiftmodule","-output-file-map","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/output-file-map.json","-whole-module-optimization","-num-threads","10","-c","@/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch.build/sources","-I","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx14.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-O","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE","-module-cache-path","/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","MacNotch_main","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","macnotch"]
+
+  "MacNotch-arm64-apple-macosx-release.module-resources":
+    tool: phony
+    inputs: ["/Users/jeongmin/Documents/coding/MacNotch/.build/arm64-apple-macosx/release/MacNotch_MacNotch.bundle/Assets.xcassets/"]
+    outputs: ["<MacNotch-arm64-apple-macosx-release.module-resources>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/jeongmin/Documents/coding/MacNotch/Sources/MacNotch/","/Users/jeongmin/Documents/coding/MacNotch/Package.swift","/Users/jeongmin/Documents/coding/MacNotch/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- 앱 샌드박스 (배포용) -->
+    <key>com.apple.security.app-sandbox</key>
+    <false/>
+
+    <!-- 파일 드래그 앤 드롭 -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+
+    <!-- 네트워크 -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+
+    <!-- AppleScript (앨범아트, 볼륨) -->
+    <key>com.apple.security.automation.apple-events</key>
+    <true/>
+</dict>
+</plist>
